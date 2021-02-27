@@ -1,0 +1,27 @@
+{
+	"name": "tap-cohort-1",
+	"version": "1.0.0",
+	"description": "Pokédex is a website that allows the user to search for their favorite Pokémons and know all about them.",
+	"main": "index.js",
+	"scripts": {
+		"start": "node server/server.js",
+		"dev": "nodemon server/server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://95_rawan@bitbucket.org/kiitos/tap-cohort-1.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"homepage": "https://bitbucket.org/kiitos/tap-cohort-1#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"express-handlebars": "^5.2.1",
+		"node": "^14.15.2",
+		"yarn": "^1.22.10"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.7"
+	}
+}

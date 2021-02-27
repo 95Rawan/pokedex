@@ -1,0 +1,47 @@
+{{>header}}
+
+<img class="responsive-img" src="/assets/pokemon-banner.jpg" alt="">
+<div class="seen-caught-container">
+  <span class="seen-span center-align flow-text red-text">Seen: 0</span>
+  <span class="caught-span center-align flow-text green-text">Caught: 0</span>
+</div>
+
+<div class="pokemon center">
+  <div class="row">
+      {{#each pokemons}}
+        <div class="col s12 m3 l2" style="width: 200px; height:250px">
+          <div class="card" id="pokemon-card" >
+            <div class="card-image responsive-img waves-effect waves-block waves-light modal-trigger" href="#{{this.id}}modal">
+              <img class="responsive-img pokemon-img" src={{this.image}} alt={{this.name.english}}>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 pokemon-card-name modal-trigger" href="#{{this.id}}modal">{{this.name.english}}</span>
+                <div class="card-action">
+                  <button class="waves-effect waves-teal btn-flat caught-button">
+                    <i class="material-icons check-icon">check</i>
+                  </button>
+                  <button class="waves-effect waves-teal btn-flat seen-button">
+                    <i class="material-icons eye-icon">remove_red_eye</i>
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="{{this.id}}modal" class="modal">
+          <div class="modal-content">
+            <h4>{{this.name.english}} Status</h4>
+              {{#each this.base as |value key|}}
+                <p>{{key}}: {{ value}}</p>
+                <div class="progress">
+                  <div class="determinate" style="width:{{value}}%"></div>
+                </div>
+              {{/each}}
+          </div>
+        </div>
+      {{/each}}
+  </div>
+</div>
+
+{{>footer}}
+

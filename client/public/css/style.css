@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.search-input-field i {
+	margin-top: -22px !important;
+}
+.seen-caught-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.seen-span {
+	margin-right: 20px;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 235px;
+}
+.card-container {
+	height: auto;
+}
+.pokemon,
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.grid-container {
+	width: 200px !important;
+	height: 250px !important;
+}
+.card-image {
+	width: 50%;
+	height: 50%;
+	margin-top: 20px;
+}
+.card-action {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.eye-icon {
+	background: 'red' !important;
+}
+.seen-button {
+	background: 'red' !important;
+}
+.card-title {
+	font-size: 1.5rem !important;
+}
+.modal-trigger {
+	text-transform: none !important;
+}
+.modal-trigger-link {
+	display: flex;
+	justify-content: center;
+}
+.heart-icon {
+	margin-left: 3px;
+	margin-right: 3px;
+}
